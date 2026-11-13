@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0A0A0A;
+  --color-brand-gold: #C9A227;
+  --color-brand-gold-light: #E8BC3A;
+  --color-brand-gold-dark: #A88520;
+  --color-brand-white: #FFFFFF;
+  --color-brand-gray: #9CA3AF;
+  --color-brand-gray-dark: #374151;
+  --color-brand-surface: #111111;
+  --color-brand-surface-2: #1A1A1A;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --letter-spacing-widest-2: 0.25em;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom design system utility classes */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.section-label {
+  color: #C9A227;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.btn-gold {
+  background-color: #C9A227;
+  color: #0A0A0A;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px -2px rgba(201, 162, 39, 0.25);
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.btn-gold:hover {
+  background-color: #E8BC3A;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(201, 162, 39, 0.4);
+}
+
+.btn-gold:active {
+  transform: translateY(1px);
+}
+
+.btn-outline {
+  border: 1px solid #C9A227;
+  color: #C9A227;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.btn-outline:hover {
+  background-color: #C9A227;
+  color: #0A0A0A;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(201, 162, 39, 0.3);
+}
+
+.btn-outline:active {
+  transform: translateY(1px);
+}
+
+.card-dark {
+  background-color: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card-dark:hover {
+  border-color: rgba(201, 162, 39, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(201, 162, 39, 0.08);
+}
