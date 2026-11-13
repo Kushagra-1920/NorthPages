@@ -32,7 +32,7 @@ const Pricing = () => {
                 className={`relative rounded-2xl p-6 sm:p-7 flex flex-col justify-between h-full transition-all duration-300 ${
                   tier.highlighted
                     ? 'bg-brand-gold/10 border-2 border-brand-gold shadow-2xl shadow-brand-gold/15'
-                    : 'bg-brand-surface border border-white/5 hover:border-brand-gold/30'
+                    : 'bg-brand-surface border border-neutral-800 hover:border-brand-gold/30'
                 }`}
               >
                 {tier.highlighted && (
@@ -54,7 +54,7 @@ const Pricing = () => {
                     <span className="text-brand-gray text-xs ml-2 uppercase font-medium tracking-wider">USD</span>
                   </div>
 
-                  <ul className="space-y-3 mb-8 border-t border-white/10 pt-5">
+                  <ul className="space-y-3 mb-8 border-t border-neutral-800 pt-5">
                     {tier.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-2.5 text-xs sm:text-sm">
                         <FiCheck className="w-4 h-4 text-brand-gold flex-shrink-0 mt-0.5" />
@@ -84,7 +84,7 @@ const Pricing = () => {
         </div>
 
         <AnimatedSection delay={0.4}>
-          <div className="mt-12 text-center bg-brand-surface/40 border border-white/5 rounded-2xl p-6 max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="mt-12 text-center bg-brand-surface/40 border border-neutral-800 rounded-2xl p-6 max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-left">
               <p className="text-white text-sm font-semibold">Have custom requirements?</p>
               <p className="text-brand-gray text-xs">DM me on Instagram to get a tailored quote in minutes.</p>

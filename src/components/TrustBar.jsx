@@ -10,7 +10,7 @@ const brands = [
 
 const TrustBar = () => {
   return (
-    <div className="border-y border-white/5 bg-brand-surface/50 py-5 sm:py-6">
+    <div className="border-y border-neutral-800 bg-brand-surface/50 py-5 sm:py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10 text-center sm:text-left">
           <p className="text-brand-gray text-[11px] sm:text-xs font-semibold tracking-widest uppercase whitespace-nowrap">

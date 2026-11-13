@@ -50,7 +50,7 @@ const Testimonials = () => {
                   </blockquote>
                 </div>
 
-                <div className="border-t border-white/10 pt-5 flex items-center gap-4">
+                <div className="border-t border-neutral-800 pt-5 flex items-center gap-4">
                   {/* Photo Avatar with gold ring border */}
                   <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-gold/40 group-hover:border-brand-gold flex-shrink-0 transition-colors shadow-md">
                     {t.avatar ? (

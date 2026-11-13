@@ -8,7 +8,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 const Footer = () => {
 
   return (
-    <footer className="bg-brand-surface border-t border-white/5 py-12 sm:py-16">
+    <footer className="bg-brand-surface border-t border-neutral-800 py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 mb-12">
           {/* Brand */}
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div className="border-t border-neutral-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="text-brand-gray/50 text-xs">
             © {CURRENT_YEAR} NorthPages. All rights reserved.
           </p>

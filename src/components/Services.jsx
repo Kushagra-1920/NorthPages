@@ -82,7 +82,7 @@ const Services = () => {
                 <motion.div
                   whileHover={{ y: -8, scale: 1.01 }}
                   transition={{ duration: 0.35, ease: 'easeOut' }}
-                  className="card-dark relative flex flex-col h-full group overflow-hidden border border-white/5 hover:border-brand-gold/30 hover:shadow-2xl hover:shadow-brand-gold/10"
+                  className="card-dark relative flex flex-col h-full group overflow-hidden border border-neutral-800 hover:border-brand-gold/30 hover:shadow-2xl hover:shadow-brand-gold/10"
                 >
                   {/* Subtle Abstract Duotone Watermark SVG */}
                   <svg
@@ -114,7 +114,7 @@ const Services = () => {
                     {service.description}
                   </p>
 
-                  <ul className="space-y-2.5 mb-8 border-t border-white/5 pt-6">
+                  <ul className="space-y-2.5 mb-8 border-t border-neutral-800 pt-6">
                     {service.features.map((f) => (
                       <li key={f} className="flex items-center gap-2.5 text-xs text-brand-gray group-hover:text-gray-300 transition-colors">
                         <span className="w-1.5 h-1.5 rounded-full bg-brand-gold flex-shrink-0" />
@@ -123,7 +123,7 @@ const Services = () => {
                     ))}
                   </ul>
 
-                  <div className="border-t border-white/5 pt-5 flex items-center justify-between mt-auto">
+                  <div className="border-t border-neutral-800 pt-5 flex items-center justify-between mt-auto">
                     <div>
                       <p className="text-[10px] uppercase tracking-wider text-brand-gray">Investment</p>
                       <span className="text-brand-gold text-base font-bold">{service.price}</span>
@@ -132,7 +132,7 @@ const Services = () => {
                       href={INSTAGRAM_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-white group-hover:text-brand-gold transition-colors cursor-pointer bg-white/5 hover:bg-white/10 px-4 py-2.5 rounded-full border border-white/10 group-hover:border-brand-gold/30 active:scale-95"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-white group-hover:text-brand-gold transition-colors cursor-pointer bg-white/5 hover:bg-white/10 px-4 py-2.5 rounded-full border border-neutral-700 group-hover:border-brand-gold/30 active:scale-95"
                     >
                       <FiInstagram className="w-3.5 h-3.5" />
                       <span>Enquire</span>

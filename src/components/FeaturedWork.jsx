@@ -16,14 +16,14 @@ const ProjectCard = ({ project, index }) => {
         className="lg:col-span-7"
       >
         <motion.div
-          whileHover={{ y: -8, scale: 1.015 }}
+          whileHover={{ y: -6, scale: 1.01 }}
           transition={{ duration: 0.4, ease: 'easeOut' }}
-          className="relative group rounded-3xl p-3 sm:p-5 bg-[#f2f1ee] shadow-2xl shadow-black/50 border border-white/10"
+          className="relative group"
         >
-          {/* Laptop Body Frame with Soft Natural Drop Shadow */}
-          <div className="relative bg-[#111116] rounded-2xl overflow-hidden border border-black/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.35)]">
+          {/* Laptop Body Frame with Sleek Dark Finish */}
+          <div className="relative bg-[#111116] rounded-2xl overflow-hidden border border-neutral-800 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)]">
             {/* Top Browser Header Bar */}
-            <div className="flex items-center justify-between px-4 py-3 bg-[#1e1e26] border-b border-white/10">
+            <div className="flex items-center justify-between px-4 py-3 bg-[#1e1e26] border-b border-neutral-800">
               {/* Traffic Light Dots */}
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-[#ff5f56] inline-block shadow-sm" />
@@ -37,7 +37,7 @@ const ProjectCard = ({ project, index }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Click to open live site"
-                className="flex items-center gap-2 bg-[#0d0d12] hover:bg-[#15151e] border border-white/10 hover:border-brand-gold/40 rounded-full px-4 py-1 text-xs text-brand-gray hover:text-white w-1/2 max-w-xs justify-center shadow-inner transition-colors"
+                className="flex items-center gap-2 bg-[#0d0d12] hover:bg-[#15151e] border border-neutral-800 hover:border-brand-gold/40 rounded-full px-4 py-1 text-xs text-brand-gray hover:text-white w-1/2 max-w-xs justify-center shadow-inner transition-colors"
               >
                 <FiLock className="w-3 h-3 text-brand-gold" />
                 <span className="truncate">{project.liveUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')}</span>
@@ -69,7 +69,7 @@ const ProjectCard = ({ project, index }) => {
           <motion.div
             animate={{ y: [0, -5, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-            className="absolute top-7 right-7 bg-white/95 backdrop-blur-md border border-black/10 text-gray-900 px-4 py-2.5 rounded-2xl shadow-2xl shadow-black/25 flex items-center gap-2.5 pointer-events-none z-20"
+            className="absolute top-5 right-5 bg-white/95 backdrop-blur-md border border-black/10 text-gray-900 px-4 py-2.5 rounded-2xl shadow-2xl shadow-black/25 flex items-center gap-2.5 pointer-events-none z-20"
           >
             <div className="w-8 h-8 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600">
               <FiTrendingUp className="w-4 h-4" />
@@ -87,7 +87,7 @@ const ProjectCard = ({ project, index }) => {
           <motion.div
             animate={{ y: [0, 5, 0] }}
             transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-            className="absolute bottom-7 left-7 bg-white/95 backdrop-blur-md border border-black/10 text-gray-900 px-4 py-2.5 rounded-2xl shadow-2xl shadow-black/25 flex items-center gap-2.5 pointer-events-none z-20"
+            className="absolute bottom-5 left-5 bg-white/95 backdrop-blur-md border border-black/10 text-gray-900 px-4 py-2.5 rounded-2xl shadow-2xl shadow-black/25 flex items-center gap-2.5 pointer-events-none z-20"
           >
             <div className="w-8 h-8 rounded-xl bg-brand-gold/15 flex items-center justify-center text-brand-gold">
               <FiCheckCircle className="w-4 h-4" />

@@ -124,7 +124,7 @@ const Contact = () => {
                     href={INSTAGRAM_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between p-3 rounded-xl bg-brand-bg/60 border border-white/5 hover:border-brand-gold/40 hover:bg-brand-surface text-xs font-medium text-white transition-all duration-200 group active:scale-95"
+                    className="flex items-center justify-between p-3 rounded-xl bg-brand-bg/60 border border-neutral-800 hover:border-brand-gold/40 hover:bg-brand-surface text-xs font-medium text-white transition-all duration-200 group active:scale-95"
                   >
                     <span className="truncate">{item.label}</span>
                     <FiArrowUpRight className="w-3.5 h-3.5 text-brand-gold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform flex-shrink-0" />
@@ -151,7 +151,7 @@ const Contact = () => {
               <button
                 type="button"
                 onClick={handleCopy}
-                className="w-full sm:w-auto px-6 py-4 rounded-full border border-white/10 hover:border-brand-gold text-xs sm:text-sm text-brand-gray hover:text-white transition-all flex items-center justify-center gap-2 bg-white/5"
+                className="w-full sm:w-auto px-6 py-4 rounded-full border border-neutral-800 hover:border-brand-gold text-xs sm:text-sm text-brand-gray hover:text-white transition-all flex items-center justify-center gap-2 bg-white/5"
               >
                 {copied ? (
                   <>

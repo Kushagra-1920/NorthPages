@@ -152,7 +152,7 @@ const Hero = () => {
             smooth={true}
             duration={700}
             offset={-80}
-            className="text-brand-gray hover:text-white text-sm sm:text-base font-medium transition-colors cursor-pointer flex items-center justify-center gap-2 group py-3 px-6 rounded-full hover:bg-white/5 border border-transparent hover:border-white/10 w-full sm:w-auto"
+            className="text-brand-gray hover:text-white text-sm sm:text-base font-medium transition-colors cursor-pointer flex items-center justify-center gap-2 group py-3 px-6 rounded-full hover:bg-white/5 border border-transparent hover:border-neutral-700 w-full sm:w-auto"
           >
             <span>See the Work</span>
             <span className="group-hover:translate-y-1 transition-transform duration-200">↓</span>
@@ -177,27 +177,27 @@ const Hero = () => {
           </span>
         </motion.div>
 
-        {/* Cohesive Device Mockup Stage on Light/Neutral Background */}
+        {/* Cohesive Device Mockup Stage */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.3, ease: [0.16, 1, 0.3, 1] }}
           style={{ rotateX: mockupRotateX, rotateY: mockupRotateY }}
-          className="relative max-w-4xl mx-auto rounded-3xl p-3 sm:p-5 bg-[#f2f1ee] shadow-2xl shadow-black/70 border border-white/15"
+          className="relative max-w-4xl mx-auto rounded-2xl shadow-2xl shadow-black/80"
         >
           {/* Ambient golden underglow behind canvas */}
           <div className="absolute -inset-4 bg-gradient-to-r from-brand-gold/15 via-brand-gold/5 to-transparent rounded-[36px] blur-2xl opacity-60 pointer-events-none" />
 
           {/* Laptop Shell Frame */}
-          <div className="relative bg-[#111116] rounded-2xl overflow-hidden border border-black/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.35)]">
+          <div className="relative bg-[#111116] rounded-2xl overflow-hidden border border-neutral-800 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)]">
             {/* Top Browser Window Header */}
-            <div className="flex items-center justify-between px-4 py-3 bg-[#1e1e26] border-b border-white/10">
+            <div className="flex items-center justify-between px-4 py-3 bg-[#1e1e26] border-b border-neutral-800">
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-[#ff5f56]" />
                 <span className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
                 <span className="w-3 h-3 rounded-full bg-[#27c93f]" />
               </div>
-              <div className="flex items-center gap-2 bg-[#0d0d12] border border-white/10 rounded-full px-4 py-1 text-xs text-brand-gray/80 w-1/2 max-w-xs justify-center shadow-inner">
+              <div className="flex items-center gap-2 bg-[#0d0d12] border border-neutral-800 rounded-full px-4 py-1 text-xs text-brand-gray/80 w-1/2 max-w-xs justify-center shadow-inner">
                 <FiLock className="w-3 h-3 text-brand-gold" />
                 <span className="truncate">northpages.dev/preview</span>
               </div>
@@ -224,7 +224,7 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="flex items-center gap-4 pt-4 border-t border-white/5">
+              <div className="flex items-center gap-4 pt-4 border-t border-neutral-800">
                 <div className="btn-gold text-[11px] sm:text-xs py-2 px-4 shadow">
                   Explore Live Demo →
                 </div>

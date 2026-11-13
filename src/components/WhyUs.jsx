@@ -84,7 +84,7 @@ const WhyUs = () => {
                     </p>
                   </div>
 
-                  <div className="border-t border-white/5 pt-4">
+                  <div className="border-t border-neutral-800 pt-4">
                     <p className="text-brand-gray text-xs leading-relaxed">
                       {pillar.subtext}
                     </p>
